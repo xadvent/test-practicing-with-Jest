@@ -2,7 +2,7 @@ export function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-export const reverseString = (string) => string.split('').reverse().join('')
+export const reverseString = (string) => string.split('').reverse().join('');
 
 export function calc(a, b) {
     return {
@@ -28,12 +28,13 @@ export function caesarCipher(string) {
 }
 
 export function analyzeArray(arr) {
-    const average = arr.reduce((prev, curr) => prev += curr) / arr.length
-    const min = arr.reduce((prev, curr) =>{
+    const average = arr.reduce((prev, curr) => prev += curr) / arr.length;
+
+    const min = arr.reduce((prev, curr) => {
         return prev < curr ? prev : curr
     })
 
-    const max = arr.reduce((prev, curr) =>{
+    const max = arr.reduce((prev, curr) => {
         return prev > curr ? prev : curr
     })
 
